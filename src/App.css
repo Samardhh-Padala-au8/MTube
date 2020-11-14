@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.outerstrip {
+  width: 100vw;
+  height: 3px;
+}
+
+.innerstrip {
+  width: 0;
+  height: 100%;
+  background: #FF0001;
+}
+
+.innerstrip.loading {
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 100vw;
+  }
+}
+
